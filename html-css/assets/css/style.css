@@ -1,1 +1,110 @@
 @charset 'UTF-8';
+/* =================================================================
+    Base style
+=================================================================
+ */
+ :root {
+    --black-color: #333;
+    --white-color: #fff;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    color: var(--black-color);
+}
+section {
+    margin-bottom: 100px;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+.inner {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+/* =================================================================
+    Flex style
+=================================================================
+ */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 8px;
+}
+.flex-col-4 {
+    gap: 20px;
+
+    > .flex-item {
+        /* border: 1px solid #000; */
+        width: calc((100% - 60px) / 4);
+    }
+}
+.flex-col-2 {
+    gap: 20px;
+
+    > .flex-item {
+        /* border: 1px solid #000; */
+        width: calc((100% - 20px) / 2);
+    }
+}
+.flex-col-6 {
+    gap: 8px;
+
+    > .flex-item {
+        /* border: 1px solid #000; */
+        width: calc((100% - 40px) / 6);
+    }
+}
+/* =================================================================
+    Main
+=================================================================
+ */
+.purple-sec {
+    padding: 40px;
+    background-image: repeating-linear-gradient(331deg, #45285d, #45285d 4px, #292542 4px, #292542 9px);
+
+    h2 {
+        color: var(--white-color);
+    }
+
+    .purple-item {
+        background-color: #DA46EE;
+        color: var(--white-color);
+    }
+}
+.blue-sec{
+    padding: 40px;
+    background-image: repeating-linear-gradient(331deg, #193a80, #193a80 4px, #162545 4px, #162545 9px);
+
+    h2 {
+        color: var(--white-color);
+    }
+
+    .blue-item {
+        background-color: #2464EC;
+        color: var(--white-color);
+    }
+}
+.orange-sec{
+    padding: 40px;
+    background-image: repeating-linear-gradient(331deg, #b04f19, #b04f19 4px, #682a08 4px, #682a08 9px);
+    
+    h2 {
+        color: var(--white-color);
+    }
+
+    .orange-item {
+        background-color: #E8661F;
+        color: var(--white-color);
+    }
+}
