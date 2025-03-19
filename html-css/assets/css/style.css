@@ -14,6 +14,9 @@ body {
     font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     color: var(--black-color);
 }
+h3 {
+    color: var(--white-color);
+}
 section {
     margin-bottom: 100px;
 }
@@ -26,6 +29,7 @@ li {
 .inner {
     max-width: 1200px;
     margin-inline: auto;
+    padding: 0 2vw;
 }
 /* =================================================================
     Flex style
@@ -66,16 +70,12 @@ li {
     }
 }
 /* =================================================================
-    Main
+    display:flexを用いたグリッドレイアウト
 =================================================================
  */
 .purple-sec {
     padding: 40px;
     background-image: repeating-linear-gradient(331deg, #45285d, #45285d 4px, #292542 4px, #292542 9px);
-
-    h2 {
-        color: var(--white-color);
-    }
 
     .purple-item {
         background-color: #DA46EE;
@@ -86,10 +86,6 @@ li {
     padding: 40px;
     background-image: repeating-linear-gradient(331deg, #193a80, #193a80 4px, #162545 4px, #162545 9px);
 
-    h2 {
-        color: var(--white-color);
-    }
-
     .blue-item {
         background-color: #2464EC;
         color: var(--white-color);
@@ -98,13 +94,74 @@ li {
 .orange-sec{
     padding: 40px;
     background-image: repeating-linear-gradient(331deg, #b04f19, #b04f19 4px, #682a08 4px, #682a08 9px);
-    
-    h2 {
-        color: var(--white-color);
-    }
 
     .orange-item {
         background-color: #E8661F;
         color: var(--white-color);
+    }
+}
+/* =================================================================
+    ログインフォーム
+=================================================================
+ */
+.login-form-sec {
+    max-width: 500px;
+    margin-inline: auto;
+    padding: 8px 24px;
+    background-color: #1F2838;
+    color: var(--white-color);
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .signup-anchor {
+        font-weight: bold;
+        text-decoration: none;
+        color: #2464EC;
+        margin-left: 16px;
+    }
+
+    .signup-anchor:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}
+
+#login-form {
+    /* border: 1px solid #fff; */
+
+    .login-form-items {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    label {
+        border: none;
+        font-weight: bold;
+    }
+
+    input {
+        border: none;
+        height: 40px;
+        border-radius: 8px;
+    }
+    
+    .button {
+        font-size: 18px;
+        color: var(--white-color);
+        border: none;
+        background-color: #2464EC;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+        transition: 0.3s;
     }
 }

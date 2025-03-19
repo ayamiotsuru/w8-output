@@ -11,8 +11,9 @@
 <body>
     <div class="inner">
         <h1>STEP9 1/3 HTML/CSS 大鶴綾美</h1>
+        <h2>display:flexを用いたグリッドレイアウト</h2>
         <section class="purple-sec">
-            <h2>1.横4 × 縦4</h2>
+            <h3>1.横4 × 縦4</h3>
             <ul class="flex flex-col-4">
                 <li class="flex-item purple-item">01</li>
                 <li class="flex-item purple-item">02</li>
@@ -29,7 +30,7 @@
             </ul>
         </section>
         <section class="blue-sec">
-            <h2>2.横2 × 縦2</h2>
+            <h3>2.横2 × 縦2</h3>
             <ul class="flex flex-col-2">
                 <li class="flex-item blue-item">01</li>
                 <li class="flex-item blue-item">02</li>
@@ -38,7 +39,7 @@
             </ul>
         </section>
         <section class="orange-sec">
-            <h2>3.横6 × 縦1</h2>
+            <h3>3.横6 × 縦1</h3>
             <ul class="flex flex-col-6">
                 <li class="flex-item orange-item">01</li>
                 <li class="flex-item orange-item">02</li>
@@ -47,6 +48,22 @@
                 <li class="flex-item orange-item">05</li>
                 <li class="flex-item orange-item">06</li>
             </ul>
+        </section>
+        <h2>ログインフォーム</h2>
+        <section class="login-form-sec">
+            <h3>Sign in to your account</h3>
+            <form action="#" id="login-form">
+                <div class="login-form-items">
+                    <label for="emal">Your email</label>
+                    <input type="email" name="email" id="email" placeholder="メールアドレスを入力してください">
+                </div>
+                <div class="login-form-items">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" placeholder="パスワードを入力してください">
+                </div>
+                <button type="submit" class="button">Sing in</button>
+            </form>
+            <p>Don't have an account yet?<a href="#" class="signup-anchor">Sign up</a></p>
         </section>
     </div>
 </body>
