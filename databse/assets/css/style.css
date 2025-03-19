@@ -1,0 +1,92 @@
+@charset 'UTF-8';
+/* =================================================================
+    Base style
+=================================================================
+ */
+ :root {
+    --black-color: #333;
+    --white-color: #fff;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    color: var(--black-color);
+}
+h3 {
+    color: var(--white-color);
+}
+section {
+    margin-bottom: 100px;
+}
+.inner {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0 2vw;
+}
+/* =================================================================
+    ログインフォーム
+=================================================================
+ */
+.login-form-sec {
+    max-width: 500px;
+    margin-inline: auto;
+    padding: 8px 24px;
+    background-color: #1F2838;
+    color: var(--white-color);
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .signup-anchor {
+        font-weight: bold;
+        text-decoration: none;
+        color: #2464EC;
+        margin-left: 16px;
+    }
+
+    .signup-anchor:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}
+
+#login-form {
+    /* border: 1px solid #fff; */
+
+    .login-form-items {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    label {
+        border: none;
+        font-weight: bold;
+    }
+
+    input {
+        border: none;
+        height: 40px;
+        border-radius: 8px;
+    }
+    
+    .button {
+        font-size: 18px;
+        color: var(--white-color);
+        border: none;
+        background-color: #2464EC;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}
